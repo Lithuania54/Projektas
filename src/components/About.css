@@ -1,0 +1,142 @@
+.about {
+    padding: 15rem 1rem 0 0.6rem;
+    width: 100%;
+    background-image: linear-gradient(#ffffff, #4b4a4a);
+}
+
+.about .container {
+    margin: auto;
+    width: 1240px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.about h2 {
+    font-size: 3rem;
+}
+
+.about .col-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    flex-direction: column;
+}
+
+.parent {
+    white-space: nowrap;
+    font-size: 2rem;
+}
+
+.child1 {
+    display: inline-block;
+    padding-right: 20px;
+    margin-top: 20px;
+    color: black;
+}
+
+.child2 {
+    display: inline-block;
+    font-size: 2.2rem;
+    font-style: italic;
+    font-weight: 600;
+    margin: 2rem 0;
+    text-align: center;
+    color:	#c9c9c9;
+}
+
+.parent a:hover{
+    color: white;
+}
+
+.about button {
+    margin-top: 1rem;
+}
+
+@media screen and (max-width:1256px) {
+    .about .container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+    }
+
+    .about .container img {
+        padding: 0rem;
+        width: 30vw;
+    }
+
+    .about button {
+        margin-bottom: 1rem;
+    }
+
+    .child1 {
+        text-align: right;
+        color: black;
+    }
+
+    .child2 {
+        text-align: right;
+    }
+
+}
+
+@media screen and (max-width:944px) {
+
+    .about {
+        background-color: #f8f8f8;
+        padding: auto;
+        width: 100%;
+        background: linear-gradient(#ffffff, #3d3939);
+    }
+
+     .about .container {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .about .container img {
+        display: none;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .child2 {
+        font-size: 1.2rem;
+    }
+
+    .parent {
+        font-size: 1rem;
+        color: black;
+    }
+
+    .about {
+        background-color: #f8f8f8;
+        padding: auto;
+        padding-top: 7rem;
+        padding-bottom: 3rem;
+        width: 100%;
+        background: linear-gradient(#ffffff, #3d3939);
+    }
+
+    .about .container {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .about h2 {
+        font-size: 2rem;
+        padding-left: 1rem;
+    }
+
+    .about .col-2 {
+        display: flex;
+    }
+}
+
+
+
+
+
+
+
+
+
